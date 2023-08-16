@@ -1,0 +1,124 @@
+.indexPage {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  font-family: 'Lato','Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  padding:0 20px;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+#projects{
+  display: flex;
+  align-items: center;
+  margin-bottom:20px;
+}
+
+#projects img{
+  width:300px;
+  margin: 0 0 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('background.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 700px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron .row{
+  /*background-color:rgba(255, 255, 255, 0.8);*/
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  /*margin-left: auto;
+    margin-right: auto;
+  margin: 100px 0 20px;*/
+  color: #fff;
+}
+
+section .row img {
+  border: 5px solid #fff;
+  margin: 0 0 0px;
+  width: 70%;
+
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  font-weight: 300;
+  border-radius: 2px;
+  border: 0px;
+  padding: 0 20px;
+  margin: 0
+  text-shadow: none;
+  color:black;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #87CEEB;
+  background-color: #ffffff;
+}
+
+.btn-secondary {
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+footer p {
+  padding: 0 20px 10px 10px;
+  margin: 0;
+}
+footer {
+  padding: 0px 0;
+}
+
+footer nav {
+  margin:0px;
+  display: flex;
+  justify-content: center;
+}
