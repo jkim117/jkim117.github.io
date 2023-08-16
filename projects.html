@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=600">
+  <title>Jason Kim</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <header class="container">
+    <div class="row">
+      <h1 class="col-sm-4">Jason Kim</h1>
+      <nav class="col-sm-8 text-right">
+        <a class="btn btn-primary" href="https://jasonjosephkim.com" role="button">Home</a>
+        <a class="btn btn-primary" href="bio.html" role="button">About Me</a>
+        <a class="btn btn-primary" href="projects.html" role="button">CS Projects</a>
+        <a class="btn btn-primary" href="https://github.com/jkim117" role="button">Github</a>
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/jason-kim-704221143/" role="button">LinkedIn</a>
+        <a class="btn btn-primary" href="Jason Kim Resume.pdf" role="button">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2>Research</h2>
+    <div class="row" id = "projects">
+      <figure class="col-sm-6">
+        <h3>Meta4 (2021)</h3>
+        <p><em><b>Outstanding Computer Science Senior Thesis Prize, Sigma Xi Book Award for Outstanding Undergraduate Research</b></em></p>
+        <p>
+          Associating network traffic with human-readable domain names, instead of low-level identifiers like IP addresses, is helpful for measuring
+          traffic by domain name, rate-limiting packets by domain, and identifying IoT devices. 
+          However, existing monitoring techniques require examining traffic at an external compute node, introducing overhead and privacy risks. 
+          In this paper, we introduce Meta4, a framework for monitoring traffic by domain name in the data plane by extracting the client IP, server IP, and domain name from DNS response messages and associating the domain name with data traffic from the subsequent client-server session. 
+          A data-plane implementation has the benefits of running efficiently at line-rate, enabling the switch to take direct action on the packets (e.g., to rate-limit, block, or mark traffic based on the associated domain), and pro- tecting the privacy of user information. 
+          We implemented Meta4 on an Intel Tofino switch and evaluated our prototype against packet traces from an operational network.
+        </p>
+        <a class="btn btn-primary" href="https://dl.acm.org/doi/10.1145/3482898.3483357" role="button">ACM Paper Link</a>
+        <a class="btn btn-primary" href="https://blog.apnic.net/2021/12/15/toward-managing-network-traffic-by-domain-name/" role="button">APNIC Blog Post</a>
+        <a class="btn btn-primary" href="https://github.com/jkim117/Meta4" role="button">Github Link</a>
+      </figure>
+      <figure class="col-sm-6">
+        <img align="middle" src="meta4.jpg">
+      </figure>
+    </div>
+
+    <div class="row" id = "projects">
+      <figure class="col-sm-6">
+        <h3>Inpainting - Computer Vision (2020)</h3>
+        <p>Image inpainting refers to the problem of filling in unwanted regions of an image. Image inpainting has many applications, from restoring damaged photographs to eliminating watermarks or other artificial image features, but the primary application that we aim to address is the challenge of seamlessly “deleting” objects from an image while minimizing any resulting artifacts in that image.
+          The primary goal of this project was to implement three methods for inpainting (one diffusion- based, one exemplar-based, and one exemplar-based implementation with some of our own novel additions) and to compare and evaluate their results on object-deletion tasks. In addition, while many traditional inpainting algorithms require a human to manually specify the mask of the object to be deleted, a further goal of this project was to integrate our inpainting algorithms with Mask R-CNN to automatically recognize objects within an image and delete certain classes (people, dogs, cars, etc).
+        </p>
+        <a class="btn btn-primary" href="COS429_FinalProject.pdf" role="button">Paper Link</a>
+        <a class="btn btn-primary" href="https://github.com/jkim117/COS429_FinalProject" role="button">Github Link</a>
+      </figure>
+      <figure class="col-sm-6">
+        <img align="middle" src="429.jpg">
+      </figure>
+    </div>
+
+    <div class="row" id = "projects">
+      <figure class="col-sm-6">
+        <h3>gaia2read (2018)</h3>
+        <p>gaia2read is a C program that queries the Gaia DR2, a major, recent data release of 1.7 billion stars from the Gaia space mission. Gaia represents the most complete and accurate survey of the Milky Way galaxy thus far. This program was created for the Princeton Astrophysics Department, specifically the HAT exoplanet team, to execute queries of the Gaia DR2 quickly and efficiently. While there do exist query tools online for the Gaia DR2, they are significantly slower than gaia2read. This tool was used by the HAT team to find the exoplanet HATS-71b, a discovery that is detailed in a paper in which I am a co-author.</p>
+        <a class="btn btn-primary" href="https://arxiv.org/abs/1812.09406" role="button">arXiv Paper Link</a>
+        <a class="btn btn-primary" href="https://github.com/jkim117/gaia2read" role="button">Github Link</a>
+      </figure>
+      <figure class="col-sm-6">
+        <img align="middle" src="gaia.jpg">
+      </figure>
+    </div>
+
+    <div class="row" id="projects">
+      <figure class="col-sm-6">
+        <h3>Orbit Determination of NEA 2002 KL6 (2016)</h3>
+        <p>SSP is a summer research program sponsored by MIT and CalTech. With SSP, I wrote up a number of Python programs aimed at calculating the position, brightness, and orbital elements of near-earth asteroids using the Method of Gauss. In particular, my team and I performed an orbit determination of the asteroid 2002 KL6 from FITS image files that we took from the observatory at New Mexico Tech.</p>
+        <a class="btn btn-primary" href="2002 KL6 Gauss Research.pdf" role="button">Paper Link</a>
+        <a class="btn btn-primary" href="https://github.com/jkim117/Method-of-Gauss-Orbital-Determination" role="button">Github Link</a>
+      </figure>
+      <figure class="col-sm-6">
+        <img align="middle" src="ssp.png">
+      </figure>
+    </div>
+
+  <br><br>
+  <h2>Personal Projects</h2>
+
+      <div class="row" id="projects">
+      <figure class="col-sm-6">
+        <h3>Project Adelphi (Current)</h3>
+        <p>This is a personal project I've been working on in my free time to build a starfighter simulator based in the Star Wars universe. The basic premise is that players start as either the Empire or Rebels and capture bases, destroy enemy capital ships, build up and resource their own starfighter squadrons and airbases in order to conquer a planet.
+          The planet and bases are procedurally generated. This game is built using the Unity engine.
+        </p>
+        <a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLItXgenYILPI1ZER26pe_xipGB7A16ejS" role="button">Development Logs</a>
+        <a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLItXgenYILPIo8VhXWy2mXP_7bHrKeNIj" role="button">Tutorials</a>
+      </figure>
+      <figure class="col-sm-6">
+        <img align="middle" src="swsc.jpg">
+      </figure>
+    </div>
+
+    <div class="row" id="projects">
+      <figure class="col-sm-6">
+        <h3>Solar System Survey (2020)</h3>
+        <p>This project was created for COS 426 (Computer Graphics) at Princeton University. The goal of this project was to create a graphical representation of the solar system, including its planets, major moons, and other prominent objects like dwarf planets, asteroids, and comets. In this program, planets are accurately positioned in the simulation according to their orbital data, so the user can see an accurate spatial layout of the solar system. Celestial bodies are rendered with great visual accuracy, using available textures and carefully tuned reflection models. 
+          The user may move the view throughout the solar system, zoom in on different objects, and look around using mouse controls.</p>
+        <a class="btn btn-primary" href="https://github.com/zdasaro/Solar-System-Survey" role="button">Github Link</a>
+        <a class="btn btn-primary" href="https://zdasaro.github.io/Solar-System-Survey/" role="button">Demo Link</a>
+      </figure>
+      <figure class="col-sm-6">
+        <img align="middle" src="solarsystemsurvey.jpg">
+      </figure>
+    </div>
+
+  </section>
+  
+  
+  <footer class="container">
+    <div class="row">
+      <nav class="col-sm-12 text-right">
+        <p>jason.kim117@gmail.com / jjk7@alumni.princeton.edu / jason.j.kim23.mil@army.mil</p>
+      </nav>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
